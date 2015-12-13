@@ -1,0 +1,46 @@
+
+/**
+ * Now we're getting somewhere.
+ * Time to get a little perspective.
+ */
+
+body {
+  -webkit-perspective: 1000px;
+}
+
+/**
+ * So, let's talk projects. That's why you're here, right?
+ * I can't imagine you'd come just to see the pretty colors.
+ */
+
+/*pre:not(#style-text) {
+  -webkit-transform: rotateY(10deg);
+  -webkit-transform-origin: left;
+}*/
+
+/**
+ * That markdown on the left doesn't look great. Let's render it.
+ */
+
+#work-text.flipped {
+  -webkit-transform: rotateX(0deg) rotateY(190deg) rotateZ(180deg);
+}
+
+#work-text .md {
+  -webkit-transform: rotateY(190deg) rotateZ(180deg);
+  margin-top: 800px;
+}
+
+/**
+ * Alright. We're ready.
+ *
+ * 3...
+ * 2...
+ * 1...
+ *
+ * .
+ * ....faked you out.
+ *
+ * Okay here we go!
+ *
+ */

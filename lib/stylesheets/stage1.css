@@ -1,0 +1,90 @@
+
+/**
+ * Just give me a second to tidy things up...
+ */
+
+* {
+  -webkit-transition: all 1s;
+}
+
+/**
+ * That should keep things running smoothly..
+ * Get it, because css transitions?
+ * :\
+ * You should probably expect a few more bad jokes before we're done..
+ *
+ * ..
+ *
+ * ANYWAY:
+ * Black on white is really boring,
+ * so let's do something about it.
+ */
+
+html {
+  background: #F53AD5;
+}
+
+
+pre, a {
+  color: white;
+}
+
+/***
+ * Just kidding...
+ */
+
+
+ html {
+   background: #F1F1F1;
+ }
+
+
+ pre, a {
+   color: #333;
+ }
+
+
+/**
+ * Much better.
+ *
+ * Just a few more things to take care of, bear with me.
+ */
+
+pre:not(:empty) {
+    height: 30%;
+    max-width: 100%;
+    overflow: auto;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: -4px 4px 2px 0 rgba(0,0,0,0.3);
+    white-space: pre-wrap;
+    font-family: monospace;
+    transition: left 1s linear, right 1s linear, top 1s linear, bottom 1 linear;
+}
+
+
+/*
+ * Now lets make this a bit more readable - I'm a bit of a cli guy.
+ */
+
+.comment       { color: #46E053; font-style: italic; }
+.selector      { color: #E69F0F; }
+.selector .key { color: #64D5EA; }
+.key           { color: #64D5EA; }
+.value         { color: #BE84F2; }
+.value.px      { color: #F92772; }
+
+
+/**
+ * lets just move this down to the bottom
+ */
+
+#style-text {
+    background-color: rgba(0, 0, 0, 1);
+    bottom: 0px;
+    position: absolute;
+}
+
+/**
+ * Almost ready to go!
+ */

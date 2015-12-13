@@ -1,0 +1,11 @@
+<div class="title">
+    <div class="health"></div>
+    <div class="name">Keaton</div>
+    <div class="portrait"></div>
+</div>
+<div class="conversation"></div>
+<div class="title">
+    <div class="health"></div>
+    <div class="name">you</div>
+    <div class="portrait"></div>
+</div>
