@@ -9,9 +9,8 @@
 
 /**
  * That should keep things running smoothly..
- * Get it, because css transitions?
- * :\
- * You should probably expect a few more bad jokes before we're done..
+ *
+ * You should probably expect a few bad jokes before we're done..
  *
  * ..
  *
@@ -26,11 +25,16 @@ html {
 
 
 pre, a {
-  color: white;
+  color: green;
 }
 
 /***
- * Just kidding...
+ *
+ * Perfect!
+ *
+ * :)
+ *
+ * Only messing with you, sorry about your eyes.
  */
 
 
@@ -43,7 +47,6 @@ pre, a {
    color: #333;
  }
 
-
 /**
  * Much better.
  *
@@ -51,7 +54,6 @@ pre, a {
  */
 
 pre:not(:empty) {
-    height: 30%;
     max-width: 100%;
     overflow: auto;
     outline: 0;
@@ -59,6 +61,7 @@ pre:not(:empty) {
     box-shadow: -4px 4px 2px 0 rgba(0,0,0,0.3);
     white-space: pre-wrap;
     font-family: monospace;
+    position: absolute;
     transition: left 1s linear, right 1s linear, top 1s linear, bottom 1 linear;
 }
 
@@ -80,11 +83,53 @@ pre:not(:empty) {
  */
 
 #style-text {
-    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    height: 300px;
     bottom: 0px;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 /**
- * Almost ready to go!
+ * Thus far we've played with CSS,
+ *
+ * It's a little hard to see without hooking into your webcam,
+ *
+ * so in case you aren't a developer, CSS is responsible for pretty much all
+ *
+ * of the stylistic features of a website. You might have noticed that
+ *
+ * while we've been able to tweak some colours here and there, we're still playing with text.
+ *
+ * In terms of a house, think of CSS as the wallpaper and decor.
+ *
+ * It's is a bit hard to build and prettify a house without any walls,
+ *
+ * so we're going to need a couple new friends!
+ *
+ */
+
+pre {
+    transition: all 1s, left 1s linear, right 1s linear, top 1s linear, bottom 1 linear;
+}
+
+#style-text,
+#script-text {
+    color: white;
+    width: 50%;
+}
+
+#script-text {
+    max-height: 300px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/**
+ * Firstly lets meet HTML.
+ *
+ * HTML is responsible for the 'structure' of a website.
+ *
+ * Think of HTML as the timber, bricks and mortar that make up a house.
+ *
  */

@@ -36,7 +36,7 @@ async function startAnimation() {
         await writeTo(scriptEl, scriptText[0], 0, speed, 'script', 1);
         await writeTo(scriptEl, scriptText[1], 0, speed, 'script', 1);
         await Promise.delay(1000);
-        await writeTo(pgpEl, pgpText, 0, speed, false, 32);
+        // await writeTo(pgpEl, pgpText, 0, speed, false, 32);
         await writeTo(styleEl, styleText[3], 0, speed, 'style', 1);
         await writeTo(styleEl, styleText[4], 0, speed, 'style', 1);
     }
