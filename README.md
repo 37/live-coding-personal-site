@@ -1,11 +1,9 @@
-Keaton Okkonen
-=========
-An interactive resume
+## Keaton Okkonen
 
+An interactive resume
 [View Site](http://keaton.me)
 
-Building
---------
+## Building
 
 ```bash
 git clone git@github.com:LovelyHorse/resume.git
@@ -15,8 +13,7 @@ npm run dev
 # Open localhost:8080/index-dev.html in your browser.
 ```
 
-Building for Production
---------
+## Building for Production
 
 ```bash
 npm run build
@@ -25,9 +22,7 @@ npm run build
 
 ```
 
-Credit
---------
-```bash
+## Credit
+
 Huge credit goes to Samuel Reed whos own [site](http://strml.net) heavily inspired my own.
 Check out his site and [Github](https://github.com/strml)!
-```
