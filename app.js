@@ -13,8 +13,8 @@ let writeChar = require('./lib/javascript/writeChar');
 
 // Vars that will help us get er done
 let isDev = window.location.hostname === 'localhost';
-let speed = isDev ? 0 : 16;
-let style, script, styleEl, scriptEl, interviewEl, workEl, pgpEl, skipAnimationEl, pauseEl;
+let speed = isDev ? 0 : 4;
+let style, script, func, styleEl, scriptEl, interviewEl, workEl, pgpEl, skipAnimationEl, pauseEl;
 let animationSkipped = false, done = false, paused = false;
 let browserPrefix;
 
@@ -52,7 +52,7 @@ async function startAnimation() {
 
 function fireScript() {
     let execute = document.getElementById('script-tag').textContent;
-    console.log();
+    console.log('Executing script.');
     eval(execute);
     document.getElementById('script-tag').innerHTML = '';
 }
@@ -87,14 +87,14 @@ async function surprisinglyShortAttentionSpan() {
 
 
 /**
- * Helpers
+ * Helpersfunction-source
  */
 
 let endOfSentence = /[\.\?\!]\s$/;
 let comma = /\D[\,]\s$/;
 let endOfBlock = /[^\/]\n\n$/;
 
-async function writeTo(el, message, index, interval, mirrorToTag, charsPerInterval){
+async function writeTo(el, message, index, interval, contentType, charsPerInterval){
     if (animationSkipped) {
         // Lol who needs proper flow control
         throw new Error('SKIP IT');
@@ -107,15 +107,21 @@ async function writeTo(el, message, index, interval, mirrorToTag, charsPerInterv
     el.scrollTop = el.scrollHeight;
 
     // If this is going to <style> it's more complex; otherwise, just write.
-    if (mirrorToTag) {
-        switch(mirrorToTag){
+    if (contentType) {
+        switch (contentType) {
             case 'script':
-                writeChar(el, chars, script);
+                var type = 'script';
+                var container = script;
                 break;
             case 'style':
-                writeChar(el, chars, style);
+                var type = 'style';
+                var container = style;
+                break;
+            default:
+                console.log('!> invalid content type.');
                 break;
         }
+        writeChar(el, chars, type, container, func);
     } else {
         writeChar.simple(el, chars);
     }
@@ -132,11 +138,11 @@ async function writeTo(el, message, index, interval, mirrorToTag, charsPerInterv
             await Promise.delay(thisInterval);
         } while(paused);
 
-        return writeTo(el, message, index, interval, mirrorToTag, charsPerInterval);
+        return writeTo(el, message, index, interval, contentType, charsPerInterval);
     } else {
         writeChar.clear();
-        if (mirrorToTag == 'script') {
-            fireScript();
+        if (contentType == 'script') {
+            console.log('end of script file.')
         }
     }
 }
@@ -169,6 +175,7 @@ function getEls() {
     styleEl = document.getElementById('style-text');
     script = document.getElementById('script-tag');
     scriptEl = document.getElementById('script-text');
+    func = document.getElementById('script-function-tag');
     interviewEl = document.getElementById('interview-text');
     workEl = document.getElementById('work-text');
     pgpEl = document.getElementById('pgp-text');
