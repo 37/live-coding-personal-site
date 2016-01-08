@@ -3,7 +3,6 @@
 html, body {
   margin-top: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 pre {
@@ -13,18 +12,25 @@ pre {
   border-radius: 1px; /* Prevents bad clipping in Chrome */
 }
 
-#content {
+/*#content {
   position: absolute;
   top: 0; right: 0; left: 0; bottom: 20px;
-}
+}*/
 
 #header {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
   left: 0;
   right: 0;
   padding: 0 10px;
+}
+
+#main {
+    float: left;
+    display: block;
+    position: relative;
 }
 
 a:after {

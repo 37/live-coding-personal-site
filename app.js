@@ -13,7 +13,7 @@ let writeChar = require('./lib/javascript/writeChar');
 
 // Vars that will help us get er done
 let isDev = window.location.hostname === 'localhost';
-let speed = isDev ? 0 : 4;
+let speed = isDev ? 0 : 16;
 let style, script, func, styleEl, scriptEl, interviewEl, workEl, pgpEl, skipAnimationEl, pauseEl;
 let animationSkipped = false, done = false, paused = false;
 let browserPrefix;
@@ -31,7 +31,7 @@ async function startAnimation() {
     try {
         await writeTo(styleEl, styleText[0], 0, speed, 'style', 1);
         await writeTo(styleEl, styleText[1], 0, speed, 'style', 1);
-        await writeTo(interviewEl, interviewText, 0, speed, false, 1);
+        await writeTo(interviewEl, interviewText, 0, 0, false, 1);
         await writeTo(styleEl, styleText[2], 0, speed, 'style', 1);
         await writeTo(scriptEl, scriptText[0], 0, speed, 'script', 1);
         await writeTo(scriptEl, scriptText[1], 0, speed, 'script', 1);

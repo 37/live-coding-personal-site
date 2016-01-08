@@ -5,14 +5,90 @@ __  __  _______ __   __ .
 |   |      |    | \/ |  |
 /   /      /    /    /  /--->
 
-<div class="title">
-    <div class="health"></div>
-    <div class="name">Keaton</div>
-    <div class="portrait"></div>
+<div class="section">
+    <h1>Experience</h1>
+    <div class="item">
+        <h2>Co-Founder & CEO</h2>
+        <h3>Black</h2>
+        <span>Nov 2015 - present</span>
+        <p>Description</p>
+    </div>
+    <div class="item">
+        <h2>Developer</h2>
+        <h3>Seamless CMS</h2>
+        <span>April 2015 - present</span>
+        <p>Description</p>
+    </div>
+    <div class="item">
+        <h2>Developer & Security Analyst</h2>
+        <h3>Bond Street Digital</h2>
+        <span>February 2014 - April 2015</span>
+        <p>Description</p>
+    </div>
+    <div class="item">
+        <h2>Freelance Security Researcher</h2>
+        <h3>Bugcrowd & Hackerone</h2>
+        <span>September 2013 - 2015</span>
+        <p>Description</p>
+    </div>
+    <div class="item">
+        <h2>Freelance Web Developer</h2>
+        <h3>Various</h2>
+        <span>February 2013 - February 2014</span>
+        <p>Description</p>
+    </div>
+    <div class="item">
+        <h2>System Administrator</h2>
+        <h3>Corban Jones</h2>
+        <span>June 2010 - February 2013</span>
+        <p>Description</p>
+    </div>
 </div>
-<div class="conversation"></div>
-<div class="title">
-    <div class="health"></div>
-    <div class="name">you</div>
-    <div class="portrait"></div>
+<div class="section">
+    <h1>Honours & Awards</h1>
+    <div class="item">
+        <h2>1st Place - Sh*t Happens</h2>
+        <h3>Startup Weekend Melbourne</h2>
+        <span>November 2015</span>
+        <p>Description</p>
+    </div>
+    <div class="item">
+        <h2>Presenter</h2>
+        <h3>Future Assembly 2015</h2>
+        <span>November 2015</span>
+        <p>Description</p>
+    </div>
+    <div class="item">
+        <h2>Best Overall Application - Ani</h2>
+        <h3>Microsoft Personal Computing Hackathon</h2>
+        <span>October 2015</span>
+        <p>Description</p>
+    </div>
+    <div class="item">
+        <h2>Best Azure & Cortana Implementation - Ani</h2>
+        <h3>Microsoft Personal Computing Hackathon</h2>
+        <span>October 2015</span>
+        <p>Description</p>
+    </div>
+    <div class="item">
+        <h2>Vice President</h2>
+        <h3>RMIT CSIT Society</h2>
+        <span>August 2015</span>
+        <p>Description</p>
+    </div>
+    <div class="item">
+        <h2>2nd Place</h2>
+        <h3>Unihack 2015</h2>
+        <span>October 2015</span>
+        <p>Description</p>
+    </div>
+</div>
+<div class="section">
+    <h1>Honours & Awards</h1>
+    <div class="item">
+        <h2>System Administrator</h2>
+        <h3>Corban Jones</h2>
+        <span>June 2010 - February 2013</span>
+        <p>Description</p>
+    </div>
 </div>
