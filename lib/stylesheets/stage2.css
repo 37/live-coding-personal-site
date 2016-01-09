@@ -28,13 +28,45 @@
 }
 
 #main .grid > .item {
-  width: 33%;
+    width: calc(33% - 10px);
+    position: relative;
+    margin: 5px;
 }
 
 #main .grid > .item > img {
-    position: absolute;
+    width: 100%;
+    float: left;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+
+#main .grid > .item > .caption {
     width: 100%;
     min-height: 100%;
+    position: absolute;
     left: 0;
     z-index: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#main .grid > .item > .caption h2 {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#main .grid > .item > .caption p {
+    position: absolute;
+    padding: 30px 0;
+    display: none;
+    bottom: 0px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-transform: none;
+}
+
+#main .grid > .item:hover > .caption p {
+    display: block;
 }
