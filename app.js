@@ -31,14 +31,15 @@ async function startAnimation() {
     try {
         await writeTo(styleEl, styleText[0], 0, speed, 'style', 1);
         await writeTo(styleEl, styleText[1], 0, speed, 'style', 1);
-        await writeTo(interviewEl, interviewText, 0, 0, false, 1);
-        await writeTo(styleEl, styleText[2], 0, speed, 'style', 1);
         await writeTo(scriptEl, scriptText[0], 0, speed, 'script', 1);
+        await writeTo(interviewEl, interviewText, 0, 0, false, 1);
         await writeTo(scriptEl, scriptText[1], 0, speed, 'script', 1);
         await Promise.delay(1000);
-        // await writeTo(pgpEl, pgpText, 0, speed, false, 32);
+        await writeTo(styleEl, styleText[2], 0, speed, 'style', 1);
+        await writeTo(scriptEl, scriptText[2], 0, speed, 'script', 1);
         await writeTo(styleEl, styleText[3], 0, speed, 'style', 1);
         await writeTo(styleEl, styleText[4], 0, speed, 'style', 1);
+        // await writeTo(pgpEl, pgpText, 0, speed, false, 32);
     }
     // Flow control straight from the ghettos of Milwaukee
     catch(e) {

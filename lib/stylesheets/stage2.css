@@ -1,11 +1,40 @@
 
 /**
- * Great!
- *
- * Now we've got some HTMl.
- *
- * Next we need something else to bring it to life..
- *
- * Meet Javascript!
- *
+ * Now we're getting somewhere.
+ * Time to pretty things up a bit!
  */
+
+#main {
+    width: 60%;
+    float: left;
+    background-color: white;
+}
+
+#main .section {
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#main .section:first-child { background-color: #64EAB2; }
+#main .section:nth-child(2) { background-color: #EFFF6C; }
+#main .section:nth-child(3) { background-color: #FF6C6C; }
+#main .section:nth-child(4) { background-color: #6B52F7; }
+
+#main .section > .item {
+  width: 100%;
+  float: left;
+}
+
+#main .grid > .item {
+  width: 33%;
+}
+
+#main .grid > .item > img {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    z-index: 0;
+}

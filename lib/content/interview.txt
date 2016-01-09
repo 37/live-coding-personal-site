@@ -4,42 +4,87 @@ __  __  _______ __   __ .
 |___|      |    |\  /|  |
 |   |      |    | \/ |  |
 /   /      /    /    /  /--->
+<div class="section">
+    <div class="accent"></div>
+    <h1>Keaton's very fancy resume site</h1>
+    <p>Hi! I'm a developer based out of Melbourne, Australia and I love making <span class="italic">cool</span> things <span class="italic">quickly</span>. Do you have some cool thing(s) you'd like my help in building? Maybe? Well if you like what you see below, <a href="mailto:keaton@black.ai">drop me a line</a>.</p>
+</div>
 
+<div class="section grid">
+    <h1>Some stuff I've made</h1>
+    <div class="item">
+        <img src="http://www.marvelipsum.com/300/450/random">
+        <h2>Copicat</h2>
+        <h3>100% automated webshop</h3>
+        <p>An experiment in dropshipping</p>
+    </div>
+    <div class="item">
+        <img src="http://www.marvelipsum.com/300/450/random">
+        <h2>Sh*t Happens</h2>
+        <h3>Bathroom radio</h3>
+        <p>Because nobody wants to hear you laying cable</p>
+    </div>
+    <div class="item">
+        <img src="http://www.marvelipsum.com/300/450/random">
+        <h2>Ani</h2>
+        <h3>An AI system for the home</h3>
+        <p>Who doesn't want to be Tony Stark?</p>
+    </div>
+    <div class="item">
+        <img src="http://www.marvelipsum.com/300/450/random">
+        <h2>Man To Man</h2>
+        <h3>Men's fashion retailer</h3>
+        <p>90+ stores Austraia wide</p>
+    </div>
+    <div class="item">
+        <img src="http://www.marvelipsum.com/300/450/random">
+        <h2>Birdseed</h2>
+        <h3>Automate Social Media Management</h3>
+        <p>Interesting and relevant posts generated for your accounts.</p>
+    </div>
+    <div class="item">
+        <img src="http://www.marvelipsum.com/300/450/random">
+        <h2>Seamless CMS</h2>
+        <h3>Disrupting digital government</h3>
+        <p>Multiple government and miscellaneous projects</p>
+    </div>
+    <h3>There's dozens more I could list, but I want to keep this short! Just email me for a bigger list.</h3>
+</div>
 <div class="section">
     <h1>Experience</h1>
     <div class="item">
         <h2>Co-Founder & CEO</h2>
-        <h3>Black</h2>
+        <h3>Black</h3>
         <span>Nov 2015 - present</span>
         <p>Description</p>
     </div>
     <div class="item">
         <h2>Developer</h2>
-        <h3>Seamless CMS</h2>
+        <h3>Seamless CMS</h3>
         <span>April 2015 - present</span>
         <p>Description</p>
     </div>
     <div class="item">
         <h2>Developer & Security Analyst</h2>
-        <h3>Bond Street Digital</h2>
+        <h3>Bond Street Digital</h3>
         <span>February 2014 - April 2015</span>
         <p>Description</p>
     </div>
     <div class="item">
         <h2>Freelance Security Researcher</h2>
-        <h3>Bugcrowd & Hackerone</h2>
+        <h3>Bugcrowd & Hackerone</h3>
         <span>September 2013 - 2015</span>
         <p>Description</p>
     </div>
     <div class="item">
         <h2>Freelance Web Developer</h2>
-        <h3>Various</h2>
+        <h3>Various</h3>
         <span>February 2013 - February 2014</span>
         <p>Description</p>
     </div>
     <div class="item">
         <h2>System Administrator</h2>
-        <h3>Corban Jones</h2>
+        <h3>Corban Jones</h3>
         <span>June 2010 - February 2013</span>
         <p>Description</p>
     </div>
@@ -48,37 +93,37 @@ __  __  _______ __   __ .
     <h1>Honours & Awards</h1>
     <div class="item">
         <h2>1st Place - Sh*t Happens</h2>
-        <h3>Startup Weekend Melbourne</h2>
+        <h3>Startup Weekend Melbourne</h3>
         <span>November 2015</span>
         <p>Description</p>
     </div>
     <div class="item">
         <h2>Presenter</h2>
-        <h3>Future Assembly 2015</h2>
+        <h3>Future Assembly 2015</h3>
         <span>November 2015</span>
         <p>Description</p>
     </div>
     <div class="item">
         <h2>Best Overall Application - Ani</h2>
-        <h3>Microsoft Personal Computing Hackathon</h2>
+        <h3>Microsoft Personal Computing Hackathon</h3>
         <span>October 2015</span>
         <p>Description</p>
     </div>
     <div class="item">
         <h2>Best Azure & Cortana Implementation - Ani</h2>
-        <h3>Microsoft Personal Computing Hackathon</h2>
+        <h3>Microsoft Personal Computing Hackathon</h3>
         <span>October 2015</span>
         <p>Description</p>
     </div>
     <div class="item">
         <h2>Vice President</h2>
-        <h3>RMIT CSIT Society</h2>
+        <h3>RMIT CSIT Society</h3>
         <span>August 2015</span>
         <p>Description</p>
     </div>
     <div class="item">
         <h2>2nd Place</h2>
-        <h3>Unihack 2015</h2>
+        <h3>Unihack 2015</h3>
         <span>October 2015</span>
         <p>Description</p>
     </div>
@@ -87,7 +132,7 @@ __  __  _______ __   __ .
     <h1>Honours & Awards</h1>
     <div class="item">
         <h2>System Administrator</h2>
-        <h3>Corban Jones</h2>
+        <h3>Corban Jones</h3>
         <span>June 2010 - February 2013</span>
         <p>Description</p>
     </div>

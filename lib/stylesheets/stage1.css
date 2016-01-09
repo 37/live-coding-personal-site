@@ -3,9 +3,19 @@
   -webkit-transition: all 1s;
 }
 
+/**
+ * That didn't do much..
+ * But give it a litte bit.
+ */
+
 html {
-   background: #F1F1F1;
+    background: #F1F1F1;
 }
+
+body {
+    margin: 0;
+}
+
 pre:empty {
     display: none;
 }
@@ -20,7 +30,6 @@ pre:not(:empty) {
     position: absolute;
     background-color: black;
     color: white;
-    transition: left 1s linear, right 1s linear, top 1s linear, bottom 1s linear;
 }
 
 /**
