@@ -1,7 +1,7 @@
 require('classlist-polyfill');
 let Promise = require('bluebird');
 let md = require('markdown').markdown.toHTML;
-let interviewText = require('raw!./lib/content/interview.txt');
+let resumeText = require('raw!./lib/content/resume.txt');
 let workText = require('raw!./lib/content/work.txt');
 let pgpText = require('raw!./lib/content/pgp.txt');
 let headerHTML = require('raw!./lib/content/header.html');
@@ -32,7 +32,7 @@ async function startAnimation() {
         await writeTo(styleEl, styleText[0], 0, speed, 'style', 1);
         await writeTo(styleEl, styleText[1], 0, speed, 'style', 1);
         await writeTo(scriptEl, scriptText[0], 0, speed, 'script', 1);
-        await writeTo(interviewEl, interviewText, 0, 0, false, 1);
+        createInterviewBox();
         await writeTo(scriptEl, scriptText[1], 0, speed, 'script', 1);
         await Promise.delay(1000);
         await writeTo(styleEl, styleText[2], 0, speed, 'style', 1);
@@ -236,8 +236,7 @@ function createEventHandlers() {
 
 function createInterviewBox() {
     if (interviewEl.classList.contains('flipped')) return;
-    interviewEl.innerHTML = '<div class="text">' + replaceURLs(interviewText) + '</div>' +
-                                         '<div class="md">' + replaceURLs(md(interviewText)) + '<div>';
+    interviewEl.innerHTML = md(resumeText);
 
     interviewEl.classList.add('flipped');
     interviewEl.scrollTop = 9999;
