@@ -56,6 +56,7 @@ pre:not(:empty) {
     height: 290px;
     width: 40%;
     border: orange 2px solid;
+    z-index: 1;
 }
 
 #script-text {

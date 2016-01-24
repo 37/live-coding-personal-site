@@ -9,47 +9,72 @@
     float: left;
     background-color: white;
     z-index: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .section {
     width: 100%;
+    min-height: 100vh;
     float: left;
-    padding: 50px;
+    padding: 50px calc(50% - 400px);
     text-align: center;
     box-sizing: border-box;
 }
 
-.section:first-child { background-color: #64EAB2; }
+.section .heading {
+    font-size: 45px;
+    text-align: left;
+    float: left;
+    letter-spacing: -2px;
+    padding-bottom: 1px;
+}
+
+.section h1 {
+    background-color: rgba(232,227,22,0.8);
+    line-height: 50px;
+    width: 33%;
+    min-width: 360px;
+}
+
+.desc-out {
+    width: 100%;
+    font-size: 35px;
+    float: left;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.desc-in {
+    line-height: 1.2em;
+    background-color: rgba(255,255, 255, 0.8);
+    display: inline;
+}
+
+.desc-in .lit, .desc-in a.lit {
+    color: yellow;
+    background-color: black;
+}
+
 .section:nth-child(2) { background-color: #EFFF6C; }
 .section:nth-child(3) { background-color: #FF6C6C; }
 .section:nth-child(4) { background-color: #6B52F7; }
 
-.section h1 {
-    color: #333;
-}
-
-.section:first-child p {
-    width: 600px;
-    margin: 0 calc(50% - 300px);
-    background-color: white;
-    padding: 20px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
-}
-
 .section > .item {
-  width: 100%;
-  float: left;
+    width: 100%;
+    float: left;
 }
 
 #main .grid > .item {
     width: calc(33% - 10px);
+    text-align: left;
+    font-weight: 600;
     position: relative;
-    margin: 5px;
+    border-left: 5px solid black;
+    margin: 0 5px 5px 5px;
+    padding-left: 5px;
+    background-color: rgba(245, 40, 87, 0.72);
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 #main .grid > .item > img {
@@ -60,32 +85,8 @@
     border-radius:2px;
 }
 
-#main .grid > .item > .caption {
-    width: 100%;
-    min-height: 100%;
-    position: absolute;
-    left: 0;
-    z-index: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-}
-
-#main .grid > .item > .caption h2 {
-    background-color: white;
-    color: rgba(0, 0, 0, 0.9);
-}
-
-#main .grid > .item > .caption p {
-    position: absolute;
-    padding: 30px 0;
-    display: none;
-    bottom: 0px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    text-transform: none;
-}
-
-#main .grid > .item:hover > .caption p {
-    display: block;
+.grid > .item > .title {
+    font-size: 35px;
+    background-color: black;
+    color: #F3635C;
 }
