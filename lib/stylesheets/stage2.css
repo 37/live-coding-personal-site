@@ -146,3 +146,14 @@
 #awards .item {
     color: #E4DBF7;
 }
+
+
+#contact i {
+    font-size: 3em;
+    margin: 10px;
+    color: #333;
+}
+
+#contact a:after {
+    content: none;
+}

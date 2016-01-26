@@ -161,9 +161,6 @@ __  __  _______ __   __ .
         <h1>Get In Contact</h1>
     </span>
     <div class="item">
-
-    </div>
-    <div class="item">
         <a href="mailto:keaton@black.ai"><i class="fa fa-envelope"></i></a>
         <a href="http://au.linkedin.com/in/keatono"><i class="fa fa-linkedin-square"></i></a>
         <a href="https://github.com/LovelyHorse/"><i class="fa fa-github"></i></a>
