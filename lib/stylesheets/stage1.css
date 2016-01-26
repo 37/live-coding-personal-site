@@ -28,7 +28,7 @@ pre:not(:empty) {
     white-space: pre-wrap;
     font-family: monospace;
     position: absolute;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.85);
     color: white;
 }
 

@@ -56,37 +56,93 @@
 }
 
 .section:nth-child(2) { background-color: #EFFF6C; }
-.section:nth-child(3) { background-color: #FF6C6C; }
 .section:nth-child(4) { background-color: #6B52F7; }
+
+.section.shadow {
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    0px 3px 8px 0px rgba(50, 50, 50, 0.55);
+    box-shadow:         0px 3px 8px 0px rgba(50, 50, 50, 0.55);
+}
 
 .section > .item {
     width: 100%;
     float: left;
 }
 
-#main .grid > .item {
-    width: calc(33% - 10px);
-    text-align: left;
-    font-weight: 600;
-    position: relative;
-    border-left: 5px solid black;
-    margin: 0 5px 5px 5px;
-    padding-left: 5px;
-    background-color: rgba(245, 40, 87, 0.72);
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
 #main .grid > .item > img {
     width: 100%;
     float: left;
-    -webkit-border-radius:2px;
-    -moz-border-radius:2px;
-    border-radius:2px;
+}
+
+#main .grid > .item {
+    width: calc(50% - 40px);
+    text-align: left;
+    font-weight: 600;
+    position: relative;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.72);
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    0px 3px 8px 0px rgba(50, 50, 50, 0.55);
+    box-shadow:         0px 3px 8px 0px rgba(50, 50, 50, 0.55);
 }
 
 .grid > .item > .title {
-    font-size: 35px;
-    background-color: black;
-    color: #F3635C;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    top: 20px;
+    left: -20px;
+    position: absolute;
+}
+
+.grid > .item > .desc {
+    float: left;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.grid > .item > .desc > h3 {
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+.grid > .item > .desc > p {
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.grid > .item > .desc > a i {
+    float: right;
+}
+
+.grid > .item > .footer {
+    float: left;
+    font-weight: 400;
+    padding: 40px 0;
+    margin: 20px;
+}
+#experience .item {
+    color: #333;
+}
+
+.list > .item:nth-child(n+2) {
+    margin: 30px 0;
+}
+
+.list > .item h2 {
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+.list > .item:nth-child(2) h2 {
+    margin-top:20px;
+}
+
+#awards .item {
+    color: #E4DBF7;
 }
