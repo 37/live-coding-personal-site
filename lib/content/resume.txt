@@ -4,19 +4,19 @@ __  __  _______ __   __ .
 |___|      |    |\  /|  |
 |   |      |    | \/ |  |
 /   /      /    /    /  /--->
-<div class="section">
+<div id="intro" class="section">
     <div class="accent"></div>
     <span class="heading m100">
         <h1>Keaton's very fancy resume site</h1>
     </span>
-    <p class="desc-out"><span class="desc-in">Hi! I'm a <span class="lit">developer</span> and <span class="lit">entrepreneur</span> based out of Melbourne, Australia and I love making <span class="lit">cool</span> things <span class="lit">quickly</span>. <br><br>Do you have something you'd like my help in building? If you like what you see, <a class="lit" href="mailto:keaton@black.ai">drop me a line</a>.</span></p>
+    <p class="desc-out"><span class="desc-in">Hi! I'm a <span class="lit">full-stack developer</span> and <span class="lit">entrepreneur</span> based out of Melbourne, Australia and I love making <span class="lit">cool</span> things <span class="lit">quickly</span>. <br><br>Do you have something you'd like my help in building? If you like what you see, <a class="lit" href="mailto:keaton@black.ai">drop me a line</a>.</span></p>
 </div>
 
 <div id="work" class="section grid">
     <span class="heading m100">
         <h1>Some stuff I've made</h1>
     </span>
-    <div class="item">
+    <div class="item shadow">
         <img src="http://www.marvelipsum.com/300/280/random">
         <div class="title">Copicat</div>
         <div class="desc">
@@ -25,7 +25,7 @@ __  __  _______ __   __ .
             <a href="#contact"><i class="fa fa-arrow-right"></i></a>
         </div>
     </div>
-    <div class="item">
+    <div class="item shadow">
         <img src="http://www.marvelipsum.com/300/310/random">
         <div class="title">Sh*t Happens</div>
         <div class="desc">
@@ -34,7 +34,7 @@ __  __  _______ __   __ .
             <a href="#contact"><i class="fa fa-arrow-right"></i></a>
         </div>
     </div>
-    <div class="item">
+    <div class="item shadow">
         <img src="http://www.marvelipsum.com/300/300/random">
         <div class="title">Ani</div>
         <div class="desc">
@@ -43,7 +43,7 @@ __  __  _______ __   __ .
             <a href="#contact"><i class="fa fa-arrow-right"></i></a>
         </div>
     </div>
-    <div class="item">
+    <div class="item shadow">
         <img src="http://www.marvelipsum.com/300/330/random">
         <div class="title">Man To Man</div>
         <div class="desc">
@@ -52,7 +52,7 @@ __  __  _______ __   __ .
             <a href="#contact"><i class="fa fa-arrow-right"></i></a>
         </div>
     </div>
-    <div class="item">
+    <div class="item shadow">
         <img src="http://www.marvelipsum.com/300/280/random">
         <div class="title">Birdseed</div>
         <div class="desc">
@@ -61,7 +61,7 @@ __  __  _______ __   __ .
             <a href="#contact"><i class="fa fa-arrow-right"></i></a>
         </div>
     </div>
-    <div class="item">
+    <div class="item shadow">
         <img src="http://www.marvelipsum.com/300/220/random">
         <div class="title">Seamless CMS</div>
         <div class="desc">

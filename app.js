@@ -2,19 +2,19 @@ require('classlist-polyfill');
 let Promise = require('bluebird');
 let md = require('markdown').markdown.toHTML;
 let resumeText = require('raw!./lib/content/resume.txt');
-let workText = require('raw!./lib/content/work.txt');
 let pgpText = require('raw!./lib/content/pgp.txt');
 let headerHTML = require('raw!./lib/content/header.html');
-let styleText = [0, 1, 2, 3, 4, 5].map(function(i) { return require('raw!./lib/stylesheets/stage' + i + '.css'); });
-let scriptText = [0, 1, 2].map(function(i) { return require('raw!./lib/javascript/script' + i + '.js'); });
+let styleText = [0, 1, 2, 3, 4, 5, 6, 7].map(function(i) { return require('raw!./lib/stylesheets/stage' + i + '.css'); });
+let scriptText = [0, 1, 2, 3, 4, 5, 6].map(function(i) { return require('raw!./lib/javascript/script' + i + '.js'); });
 let preStyles = require('raw!./lib/stylesheets/prestyles.css');
+let preScript = require('raw!./lib/javascript/prescript.js');
 let replaceURLs = require('./lib/javascript/replaceURLs');
 let writeChar = require('./lib/javascript/writeChar');
 
 // Vars that will help us get er done
 let isDev = window.location.hostname === 'localhost';
-let speed = isDev ? 0 : 16;
-let style, script, func, styleEl, scriptEl, interviewEl, workEl, pgpEl, skipAnimationEl, pauseEl;
+let speed = isDev ? 12 : 16;
+let style, script, functionEl, styleEl, scriptEl, interviewEl, workEl, pgpEl, skipAnimationEl, pauseEl;
 let animationSkipped = false, done = false, paused = false;
 let browserPrefix;
 
@@ -38,8 +38,14 @@ async function startAnimation() {
         await writeTo(styleEl, styleText[2], 0, speed, 'style', 1);
         await writeTo(scriptEl, scriptText[2], 0, speed, 'script', 1);
         await writeTo(styleEl, styleText[3], 0, speed, 'style', 1);
+        await writeTo(scriptEl, scriptText[3], 0, speed, 'script', 1);
         await writeTo(styleEl, styleText[4], 0, speed, 'style', 1);
-        // await writeTo(pgpEl, pgpText, 0, speed, false, 32);
+        await writeTo(scriptEl, scriptText[4], 0, speed, 'script', 1);
+        await writeTo(styleEl, styleText[5], 0, speed, 'style', 1);
+        await writeTo(scriptEl, scriptText[5], 0, speed, 'script', 1);
+        await writeTo(styleEl, styleText[6], 0, speed, 'style', 1);
+        await writeTo(scriptEl, scriptText[6], 0, speed, 'script', 1);
+        await writeTo(styleEl, styleText[7], 0, speed, 'style', 1);
     }
     // Flow control straight from the ghettos of Milwaukee
     catch(e) {
@@ -122,7 +128,7 @@ async function writeTo(el, message, index, interval, contentType, charsPerInterv
                 console.log('!> invalid content type.');
                 break;
         }
-        writeChar(el, chars, type, container, func);
+        writeChar(el, chars, type, container, functionEl);
     } else {
         writeChar.simple(el, chars);
     }
@@ -171,12 +177,16 @@ function getEls() {
     preStyleEl.textContent = preStyles;
     document.head.insertBefore(preStyleEl, document.getElementsByTagName('style')[0]);
 
+    let preScriptEl = document.createElement('script');
+    preScriptEl.textContent = preScript;
+    document.head.insertBefore(preScriptEl, document.getElementsByTagName('script')[0]);
+
     // El refs
     style = document.getElementById('style-tag');
     styleEl = document.getElementById('style-text');
     script = document.getElementById('script-tag');
     scriptEl = document.getElementById('script-text');
-    func = document.getElementById('script-function-tag');
+    functionEl = document.getElementById('script-function-tag');
     interviewEl = document.getElementById('interview-text');
     workEl = document.getElementById('work-text');
     pgpEl = document.getElementById('pgp-text');
