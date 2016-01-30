@@ -13,7 +13,7 @@ let writeChar = require('./lib/javascript/writeChar');
 
 // Vars that will help us get er done
 let isDev = window.location.hostname === 'localhost';
-let speed = isDev ? 12 : 16;
+let speed = isDev ? 0 : 12;
 let style, script, functionEl, styleEl, scriptEl, interviewEl, workEl, pgpEl, skipAnimationEl, pauseEl;
 let animationSkipped = false, done = false, paused = false;
 let browserPrefix;
