@@ -1,7 +1,7 @@
 ## Keaton Okkonen
 
 An interactive resume
-[View Site](http://keaton.me)
+[View Site](http://keatco.de)
 
 ## Building
 
