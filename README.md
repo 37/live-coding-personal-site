@@ -1,6 +1,6 @@
 ## Keaton Okkonen
 
-An interactive resume
+An interactive self-building resume
 [View Site](http://keatco.de)
 
 ## Building
@@ -21,6 +21,10 @@ npm run build
 # Open file://*path*/index.html in your browser.
 
 ```
+
+## Todo
+ - Touch up JS syntax highlighting
+ - Update UX / UI changes on this codebase
 
 ## Credit
 
