@@ -1,4 +1,5 @@
-## Keaton Okkonen
+## Inactive Project
+This project is not being maintained
 
 An interactive self-building resume
 [View Site](http://keatco.de)
